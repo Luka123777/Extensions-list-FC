@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+html body {
+  background-repeat: no-repeat;
+}
+html body #root .content {
+  width: 100%;
+}
+html body #root .content .presentation-header {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5vh;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 15px;
+}
+html body #root .content .presentation-header button {
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  cursor: pointer;
+}
+html body #root .content .presentation-title {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: 3vh;
+}
+html body #root .content .presentation-title .buttons-group {
+  display: flex;
+  gap: 10px;
+}
+html body #root .content .presentation-title .buttons-group button {
+  border-radius: 20px;
+}
+html body #root .content .extensions-container {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 10px;
+  margin-top: 3vh;
+}
+html body #root .content .extensions-container .extContent {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+html body #root .content .extensions-container .extContent .imageText {
+  display: flex;
+}
+html body #root .content .extensions-container .extContent .extOptions {
+  display: flex;
+  justify-content: space-between;
+}
+html body #root .content .extensions-container .extContent .extOptions button {
+  border-radius: 20px;
+}/*# sourceMappingURL=main.css.map */

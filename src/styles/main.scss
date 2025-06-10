@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+// Definición de variables
+$letra-varios: 'Open Sans', sans-serif;
+$letra-noto-sans: 'Noto Sans', sans-serif;
+$letra-bebas-neue: "Bebas Neue", sans-serif;
+
+html{
+    body.light-theme{
+        background-color: rgb(237, 250, 255);
+        #root{
+            .content{
+                width: 100%;
+
+                .presentation-header{
+                    width: 80%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 5vh;
+                    padding: 10px;
+                    border-radius: 15px;
+                    background-color: white;
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+                    .logo{
+                        color: red;
+                    }
+
+                    button{  
+                        border-radius: 15px;
+                        cursor: pointer;
+                        box-shadow:  rgba(0, 0, 0, 0) 0px 0px 0px;
+                        width: 30px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;        
+
+                    }
+                }
+                .presentation-title{
+                    display: flex;
+                    width: 80%;
+                    margin: 0 auto;
+                    justify-content: space-between;
+                    margin-top: 3vh;
+
+                    .buttons-group{
+                        display: flex;
+                        gap: 10px;
+
+                        button{
+                            border-radius: 20px;
+                            background-color: white;
+                            color: black;
+                            text-transform: none;
+                        }
+                    }
+                }
+                .extensions-container{
+                    width: 80%;
+                    margin: 0 auto;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                    gap: 10px;
+                    margin-top: 3vh;
+                    
+                    .extContent{
+                        padding: 15px;
+                        border-radius: 15px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        background-color: white;
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+                        .imageText{
+                            display: flex;
+                            gap: 12px;
+
+                            .imageText-image{
+                                flex: 2;
+                                object-fit: cover;
+                                width: 100%;
+                                height: 100%;
+                            }
+                            .imageText-content{
+                                flex: 8;
+
+                                .imageText-title{
+                                    font-weight: bold;
+                                    color: rgb(1, 1, 106);
+                                }
+                                .imageText-text{
+                                    color: rgb(104, 101, 118);
+                                }
+                            }
+                        }
+                        .extOptions{
+                            display: flex;
+                            justify-content: space-between;
+
+                            button{
+                                border-radius: 20px;
+                                color: rgb(1, 1, 106);
+                                text-transform: capitalize;
+                                font-weight: lighter;
+                                border-color: rgb(171, 171, 199);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//Pantallas chicas
+@media (max-width: 991px) {
+  html{
+    body{
+        #root{
+            .content{
+                .presentation-title{
+                    flex-direction: column;
+                    gap: 10px;
+                    
+                    .presentation-title-text{
+                        text-align: center;
+                    }
+                    .buttons-group{
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+  }
+}
+//DarkMode activado
+html{
+    body.dark-theme{
+        background: linear-gradient(rgb(18, 18, 25), rgb(18, 18, 45),  rgb(18, 18, 70));
+        #root{
+            .content{
+                width: 100%;
+
+                .presentation-header{
+                    width: 80%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 5vh;
+                    padding: 10px;
+                    border-radius: 15px;
+                    background-color: rgba(121, 123, 176, 0.15);
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+                    button{  
+                        border-radius: 15px;
+                        cursor: pointer;
+                        box-shadow:  rgba(0, 0, 0, 0) 0px 0px 0px;
+                        width: 30px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;        
+                        background-color: rgba(121, 123, 176, 0.15) !important;
+                    }
+                }
+                .presentation-title{
+                    display: flex;
+                    width: 80%;
+                    margin: 0 auto;
+                    justify-content: space-between;
+                    margin-top: 3vh;
+
+                    .presentation-title-text{
+                        color: white;
+                    }
+
+                    .buttons-group{
+                        display: flex;
+                        gap: 10px;
+
+                        button{
+                            border-radius: 20px;
+                            background-color: white;
+                            color: black;
+                            text-transform: none;
+                        }
+                    }
+                }
+                .extensions-container{
+                    width: 80%;
+                    margin: 0 auto;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                    gap: 10px;
+                    margin-top: 3vh;
+                    
+                    .extContent{
+                        padding: 15px;
+                        border-radius: 15px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        background-color: white;
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(255, 255, 255, 0.2) 0px 0px 0px 1px;                        background-color: rgba(121, 123, 176, 0.15); 
+
+                        .imageText{
+                            display: flex;
+                            gap: 12px;
+
+                            .imageText-image{
+                                flex: 2;
+                                object-fit: cover;
+                                width: 100%;
+                                height: 100%;
+                            }
+                            .imageText-content{
+                                flex: 8;
+
+                                .imageText-title{
+                                    font-weight: bold;
+                                    color: white;
+                                }
+                                .imageText-text{
+                                    color: white;
+                                    opacity: 0.8;
+                                }
+                            }
+                        }
+                        .extOptions{
+                            display: flex;
+                            justify-content: space-between;
+
+                            button{
+                                border-radius: 20px;
+                                color: rgb(1, 1, 106);
+                                text-transform: capitalize;
+                                font-weight: lighter;
+                                border-color: rgb(171, 171, 199);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
