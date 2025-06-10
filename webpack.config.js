@@ -6,7 +6,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.[contenthash].js',
-    clean: true, // limpia la carpeta dist antes de cada build
+    clean: true, 
+    publicPath: '',
   },
   resolve: {
     extensions: ['.js', '.jsx'], // para que puedas importar sin extensión
